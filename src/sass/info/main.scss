@@ -1,0 +1,152 @@
+@import 'variables';
+
+*{
+  outline: none;
+}
+a:focus, a:hover, input:focus, input:hover {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  @import 'MediaQueries/main';
+  overflow-x: hidden;
+}
+
+.slider {
+  background: #0A0B0D;
+  padding: 72px 0 48px;
+
+    min-height: 100vh;
+}
+.slick-arrow  {
+  position: absolute;
+  bottom: -16px;
+  background: 0 0;
+  width: 48px;
+  height: 48px;
+  border: 2px solid rgba(255,255,255, .1);
+  border-radius: 50%;
+  &:hover {
+    svg {
+      path {
+        stroke : #F48E06;
+      }
+    }
+  }
+}
+.slick-dots {
+  display: inline-block;
+  li {
+    display: inline-block;
+    button {
+      font-size: 0;
+      line-height: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      opacity: 0.3;
+      cursor: pointer;
+      color: transparent;
+      border: 0;
+      outline: none;
+      position: relative;
+      background:  0 0;
+      &:before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+    }
+    &.slick-active {
+      button {
+        opacity: 1;
+        &:before {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
+}
+
+.slider-title {
+  font-family: Gotham Pro;
+  font-size: 32px;
+  line-height: 31px;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+    max-width: 1152px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: 1152px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-items {
+  position: relative;
+  text-align: center;
+  max-width: 1190px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-item {
+    text-align: center;
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+
+  img {
+    background: #C4C4C4;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 357px;
+    max-height: 357px;
+    transition: .3s;
+  }
+  figure {
+   position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+    overflow: hidden;
+    border-radius: 8px;
+//    background: #C4C4C4;
+    
+     &:after {
+      content: "";
+      width: 100%;
+      height: 140px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 100%);
+      border-radius: 8px;
+      transform: matrix(1, 0, 0, -1, 0, 0);
+      position: absolute;
+       bottom: 0;
+       left: 0;
+    }
+  }
+  .name-game {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    width: calc(100% - 58px);
+    text-align: left;
+    font-family: Gotham Pro;
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+    z-index: 3;
+   
+  }
+}

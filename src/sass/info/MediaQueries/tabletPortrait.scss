@@ -1,0 +1,15 @@
+@import '../../mq';
+
+@media #{$tabletPortrait} {
+  @import '../mobile';
+
+  & {
+    .slider-item {
+
+      .name-game {
+        font-size: 24px;
+        line-height: 31px;
+      }
+    }
+  }
+}
