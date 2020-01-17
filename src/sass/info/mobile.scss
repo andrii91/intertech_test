@@ -5,9 +5,12 @@
       padding-right: 10px;
     }
   }
+/*  .slider-items {
+    max-width: 620px;
+  }*/
   .slider-item {
     figure {
-      margin: 8px;
+      margin: 0;
     }
     .name-game {
     font-size: 15px;
@@ -16,6 +19,16 @@
   }
   .slick-dots {
     margin-top: 40px;
+  }
+  .container {
+    max-width: 640px;
+  }
+   .slider-item {
+    padding: 0 4px;
+  }
+  /* the parent */
+  .slick-slide>div {
+    margin: 0 ;
   }
 }
 

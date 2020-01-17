@@ -15,12 +15,11 @@ body {
 .slider {
   background: #0A0B0D;
   padding: 72px 0 48px;
-
     min-height: 100vh;
 }
 .slick-arrow  {
   position: absolute;
-  bottom: -16px;
+  bottom: 9px;
   background: 0 0;
   width: 48px;
   height: 48px;
@@ -81,7 +80,7 @@ body {
   line-height: 31px;
   color: #FFFFFF;
   margin-bottom: 32px;
-    max-width: 1152px;
+//    max-width: 1152px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -95,7 +94,7 @@ body {
 .slider-items {
   position: relative;
   text-align: center;
-  max-width: 1190px;
+//  max-width: 1152px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -150,3 +149,15 @@ body {
    
   }
 }
+#slider {
+      overflow: hidden;
+padding-bottom: 24px;
+
+}
+ .slider-item {
+    padding: 0 20px;
+  }
+  /* the parent */
+  .slick-slide>div {
+    margin: 0 -20px;
+  }

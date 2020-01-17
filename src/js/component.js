@@ -11,7 +11,7 @@ $(document).ready(function () {
     slidesPerRow: 3,
 
     responsive: [{
-        breakpoint: 900,
+        breakpoint: 960,
         settings: {
           rows: 2,
           slidesPerRow: 2,
